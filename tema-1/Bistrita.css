@@ -11,3 +11,9 @@ button {
     height: 50px;
     border: none;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
