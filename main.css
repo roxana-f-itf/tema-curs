@@ -4,5 +4,38 @@ h1 {
 
 p {
     color: red;
-    background-color: beige;
+    background-color:none
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .flex-container div {
+    color: darkgray;
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  .flex-container div:hover{
+    background-color: lightgrey;
+    color: black;
+    text-decoration: none;
 }
