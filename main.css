@@ -1,9 +1,11 @@
 h1 {
-    color: blue;
+    color:darkgray;
+    text-align: center;
+    text-decoration: underline;
 }
 
 p {
-    color: red;
+    color: rgb(47, 15, 15);
     background-color:none
 }
 .flex-container {
