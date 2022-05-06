@@ -1,6 +1,30 @@
 h1 {
     color:cadetblue;
     text-align:justify;
+    margin: 10px;
+    display: flex;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+body {
+    padding: 100px;
+    margin-left: auto;
+
+}
+
+.flex-box img {
+border-radius: 50%;
+
 }
 
 .flex-container {
@@ -9,4 +33,48 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+
+}
+
+.personal {
+    line-height: 10px;
+
+}
+
+.work {
+    line-height: 15px;
+}
+
+
+.subtitle {
+    background-color: whitesmoke;
+    font-size: larger;
+    margin-top: 30px;
+    padding: 15px;
+    transition: width 2s, height 2s;
+    transition-duration: 2s;
+}
+
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.educatiom {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    width: 1300px;
+    padding: 50px;
+   
 }
