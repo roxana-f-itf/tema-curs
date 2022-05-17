@@ -29,10 +29,10 @@ for (i = 0; i < myArray.length; i++) {
     }
 }
 
-// let userInput = prompt('Please type in a number between 1 and 16');
-// if (userInput > 0 && userInput < 17) {
-//     alert(mySecondArray[userInput - 1])
-// }
+let userInput = prompt('Please type in a number between 1 and 16');
+if (userInput > 0 && userInput < 17) {
+    alert(mySecondArray[userInput - 1])
+}
 
 
 for (i = 0; i < mySecondArray.length; i++) {
