@@ -4,11 +4,11 @@ let no4 = 0;
 let mySecondArray = [];
 
 for (i = 0; i < myArray.length; i++) {
-    //console.log(myArray[i]);
+    console.log(myArray[i]);
     sum = sum + myArray[i];
 }
 
-//console.log(sum);   
+console.log(sum);   
 
 for (i = 0; i < myArray.length; i++) {
     if (myArray[i] == 4) {
