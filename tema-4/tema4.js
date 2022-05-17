@@ -58,5 +58,35 @@ console.log(mySecondArray);
 
 
 
-
+let nVar = prompt('Please input a number');
+let xMessage = 'Please input a number lower or equal to ' + nVar;
+let xVar = prompt(xMessage);
+let count = 0;
+let value = 1;
+for (i = 1; i <= nVar; i++) {
+    let row = '';
+    if (count % 2 == 0) {
+        value = 0;
+    }
+    else {
+        value = 1;
+    }
+    for (j = 1; j <= nVar - count; j++) {
+        if (i == xVar) {
+            row = row + '=';
+        }
+        else {
+            if (value == 0) {
+                row = row + '0';
+                value = 1;
+            }
+            else {
+                row = row + "1";
+                value = 0;
+            }
+        }
+    }
+    count++;
+    console.log(row);
+}
 
