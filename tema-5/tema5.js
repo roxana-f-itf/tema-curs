@@ -60,16 +60,16 @@ console.log(text.charAt(2));
 // ex. 1.3;
 
 function findLongestWord(string) {
-    let str = string.split(' ');
-    let longestWord = 0;
-    let word = null;
-    str.forEach(function (str) {
-        if (longestWord < str.lenght) {
-            longestWord = str.lenght;
-            word = str;
+    let arrayOfChars = string.split(' ');
+    let longestWordLength = 0;
+    let longestWord = null;
+    arrayOfChars.forEach(function (word) {
+        if (longestWordLength < word.length) {
+            longestWordLength = word.length;
+            longestWord = word;
         };
     });
-    return word;
+    return longestWord;
 };
 let prop = "JavaScript is the programming language of the Web."
 console.log(findLongestWord(prop));
@@ -141,14 +141,14 @@ if (Math.floor) {
    // ex.2.2;
 
 let array = [2, 4, 8, 1, 9, 4, 5, 5, 8, 9, 1, 3, 2];
-function multiply() {
-    let sum = 0;
+function arrayMultiply() {
+    let res = 1;
     for (let i = 0; i < array.length; i++) {
-        sum = sum * array[i];
+        res = res * array[i];
     };
-    return sum;
+    return res;
 };
-function addition() {
+function arrayAddition() {
     let add = 0;
     for (let i = 0; i < array.length; i++) {
         add = add += array[i];
@@ -156,6 +156,13 @@ function addition() {
     return add;  
 };
  // apelarea functiei - adunare || inmultire??
+
+console.log(
+    arrayAddition(array)
+);
+console.log(
+    arrayMultiply(array)
+);
 
 
 
