@@ -99,7 +99,7 @@ let theObject = {
     },
   };
   
-  Object.addNumber(10, 20).substractNumber(5).multiplyNumber(10).divideNumber(10);
+  theObject.addNumber(10, 20).substractNumber(5).multiplyNumber(10).divideNumber(10);
   console.log(Object.result);
 
 
