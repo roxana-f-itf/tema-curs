@@ -47,7 +47,7 @@ function checkPalindrome(string) {
     }
     return 'It is a palindrome.';
 }
-let string = prompt('34988943');
+let string = prompt();
 let value = checkPalindrome(string);
 console.log(value);
 
@@ -78,29 +78,29 @@ console.log(findLongestWord(prop));
 
 let Object = {
     result: 0,
-    addNumber: function (a, b) {
-        this.result = a + b;
-        return this;
+    addNumber: function(a, b) {
+      this.result = a + b;
+      return this;
     },
 
-    substractNumber: function (a) {
+    substractNumber: function(a) {
         this.result = this.result - a;
         return this;
     },
-
-    multiplyNumber: function (a) {
-        this.result = this.result * a;
-        return this;
+  
+    multiplyNumber: function(a) {
+      this.result = this.result * a;
+      return this;
     },
-
-    divideNumber: function (a) {
-        this.result = this.result / a;
-        return this;
+   
+    divideNumber: function(a) {
+      this.result = this.result / a;
+      return this;
     },
-};
-
-Object.addNumber(10, 20).substractNumber(5).multiplyNumber(10).divideNumber(10);
-console.log(Object.result);
+  };
+  
+  Object.addNumber(10, 20).substractNumber(5).multiplyNumber(10).divideNumber(10);
+  console.log(Object.result);
 
 
 
@@ -128,17 +128,17 @@ console.log(resultFactorial);
 
 if (Math.floor) {
     Math.floor = function factorial(y) {
-        return //??;
+      return //??;
     };
-};
-if (Math.ceil) {
+  };
+  if (Math.ceil) {
     Math.ceil = function factorial(y) {
-        return //??;
+      return //??;
     };
-};
+  };
 
 
-// ex.2.2;
+   // ex.2.2;
 
 let array = [2, 4, 8, 1, 9, 4, 5, 5, 8, 9, 1, 3, 2];
 function multiply() {
@@ -153,14 +153,14 @@ function addition() {
     for (let i = 0; i < array.length; i++) {
         add = add += array[i];
     };
-    return add;
+    return add;  
 };
-// apelarea functiei - adunare || inmultire??
+ // apelarea functiei - adunare || inmultire??
 
 
 
 
-// ex.2.3;
+   // ex.2.3;
 
 let personObject = {
     firstName: 'Roxana',
@@ -168,13 +168,14 @@ let personObject = {
     sex: 'f',
     petOwner: 'yes',
 
-    writePoliteName: function () {
+    writePoliteName: function() {
         let prefix = 'Mr. ';
-        if (personObject.sex === 'f') {
+        if (personObject.sex === 'f' ) {
             prefix = 'Mrs. ';
         };
 
-        console.log(prefix + personObject.firstName + ' ' + personObject.lastName);
-
+     console.log(prefix + personObject.firstName + ' ' + personObject.lastName);
+        
     },
+
 };
