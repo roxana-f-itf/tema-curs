@@ -76,7 +76,7 @@ console.log(findLongestWord(prop));
 
 // ex. 1.4;
 
-let Object = {
+let theObject = {
     result: 0,
     addNumber: function(a, b) {
       this.result = a + b;
