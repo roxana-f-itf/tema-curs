@@ -52,7 +52,7 @@ let value = checkPalindrome(string);
 console.log(value);
 
 
-let text = "34988943";
+let text = "34988943";  
 let text1 = text.charAt(2);
 console.log(text.charAt(2));
 
@@ -73,34 +73,6 @@ function findLongestWord(string) {
 };
 let prop = "JavaScript is the programming language of the Web."
 console.log(findLongestWord(prop));
-
-// ex. 1.4;
-
-let theObject = {
-    result: 0,
-    addNumber: function(a, b) {
-      this.result = a + b;
-      return this;
-    },
-
-    substractNumber: function(a) {
-        this.result = this.result - a;
-        return this;
-    },
-  
-    multiplyNumber: function(a) {
-      this.result = this.result * a;
-      return this;
-    },
-   
-    divideNumber: function(a) {
-      this.result = this.result / a;
-      return this;
-    },
-  };
-  
-  theObject.addNumber(10, 20).substractNumber(5).multiplyNumber(10).divideNumber(10);
-  console.log(Object.result);
 
 
 
@@ -165,8 +137,6 @@ console.log(
 );
 
 
-
-
    // ex.2.3;
 
 let personObject = {
@@ -186,3 +156,32 @@ let personObject = {
     },
 
 };
+
+// ex. 2.4;
+
+let theObject = {
+    result: 0,
+    addNumber: function(a, b) {
+      this.result = a + b;
+      return this;
+    },
+
+    substractNumber: function(a) {
+        this.result = this.result - a;
+        return this;
+    },
+  
+    multiplyNumber: function(a) {
+      this.result = this.result * a;
+      return this;
+    },
+   
+    divideNumber: function(a) {
+      this.result = this.result / a;
+      return this;
+    },
+  };
+  
+  theObject.addNumber(10, 20).substractNumber(5).multiplyNumber(10).divideNumber(10);
+  console.log(Object.result);
+

@@ -105,3 +105,16 @@ console.log('Hello World');
 // console.log(arr)
 // const eightEmptyValues = Array(8) // it creates eight empty values
 // console.log(eightEmptyValues) // [empty x 8]
+
+
+// get a random item from an array:
+
+// let items = [12,548,"a",2,5478,"boo",8852,"loo",2145,119];
+// let randomItems = items[Math.floor(Math.random()*items.length)];
+
+// console.log(randomItems);
+function getProduct(a, b) {
+    return a * b;
+   }
+   
+   getProduct(5, 3);
