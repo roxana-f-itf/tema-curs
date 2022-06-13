@@ -1,8 +1,8 @@
 //ex. 1.1;
 
 let alertFunction = function() {
-    alert("The first button was pressed.");
-
+  alert("The first button was pressed.");
+  return alertFunction;
 };
 
 
