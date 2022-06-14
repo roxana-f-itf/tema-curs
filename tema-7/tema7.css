@@ -1,0 +1,12 @@
+
+/* h2 { 
+    text-align: center;
+}; */
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-left: 50px;
+    margin-top: 50px;
+};
