@@ -14,19 +14,19 @@ button.innerText = "Second";
 button.addEventListener("click", function () {
   alert("The second button was pressed.");
 });
-document.body.appendChild(button);
+document.querySelector('body > div').appendChild(button);
 
 
 //ex. 1.3;
 
 let startButton = document.createElement("button");
 startButton.innerText = "Start";
-document.body.appendChild(startButton);
+document.querySelector('body > div').appendChild(startButton);
 
 function createButton(text) {
   let newButton = document.createElement("button");
   newButton.innerText = text;
-  document.body.appendChild(newButton);
+  document.querySelector('body > div').appendChild(newButton);
   return newButton;
 };
 
@@ -64,6 +64,7 @@ startButton.addEventListener("click", function () {
 
 let getStartedButton = document.createElement("button");
 getStartedButton.innerText = "What's your favorite color?";
+document.body.appendChild(document.createElement('br'));
 document.body.appendChild(getStartedButton);
 
 getStartedButton.addEventListener("click", function() {
