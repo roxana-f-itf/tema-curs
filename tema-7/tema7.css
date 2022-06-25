@@ -3,10 +3,35 @@
     text-align: center;
 }; */
 
-.square {
+.squareUpAndDown {
     width: 20px;
     height: 20px;
     background-color: blue;
     margin-left: 50px;
     margin-top: 50px;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
 };
+
+.downSquare {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+};
+
+
+@media only screen and (max-width: 500px) {
+    .squareUpAndDown {
+        margin: 5px 0px 0px 5px;
+    }
+
+    .downSquare {
+        margin: 5px 0px 0px 5px;
+    }
+  };
