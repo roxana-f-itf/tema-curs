@@ -7,7 +7,7 @@ let images = {
     renderAllCrewImages: function() {
         let imagesSection = document.querySelector('.imageContent.si-image')
 
-        imagesSection.innerHTML += window.data.allCrewImages.image;
+        imagesSection.innerHTML += images.data.allCrewImages.image;
     },
     init: function() {
         axios
@@ -28,3 +28,4 @@ let images = {
 }
 
 images.init();
+
