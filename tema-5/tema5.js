@@ -39,7 +39,7 @@ console.log(q);
 
 function checkPalindrome(string) {
 
-    let len = string.lenght;
+    let len = string.length;
     for (let i = 0; i < len; i++) {
         if (string[i] !== string[len - 1 - i]) {
             return 'It is not a palindrome.';
