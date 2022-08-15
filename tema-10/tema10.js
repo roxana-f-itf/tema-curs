@@ -18,8 +18,8 @@ let images = {
             imageItem.setAttribute('src', membersImg);
             imageItem.setAttribute('alt', membersName);
            
-            imageItem.style.height = '100px';
-            imageItem.style.width = '100px';
+            imageItem.style.height = '300px';
+            imageItem.style.width = '300px';
             imageItem.style.objectFit = 'scale-down';
             imageItem.style.alignItems = "center";
 
