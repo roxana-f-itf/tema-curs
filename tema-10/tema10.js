@@ -14,17 +14,23 @@ let images = {
             // create new image elements (at each for step) - this can be done with document.createElement
             let imageItem = document.createElement('img');
             // don;t forget to use .appendChild function, to put the img in the new divs and the new div in the 'imagesSection' element
-            imagesSection.innerHTML += images.data.allCrewImages[i].image;
+            let membersImg = images.data.allCrewImages[i].image;
             // instead of putting the image source (.image property) in the innerHTML,
-           
+            let membersName = images.data.allCrewImages[i].name;
             
-            imageItem.setAttribute('src', images.data.allCrewImages[i].image);
-            imageItem.innerHTML = images.data.allCrewImages[i].image;
+            imageItem.setAttribute('src', membersImg);
+            imageItem.setAttribute('alt', membersName);
             // make sure to put it in the 'src' HTML attribute
             // use .setAttribute('src', images.data.allCrewImages[i].image)
             // we did this in the project code
-           imgDiv.appendChild(divElement);
-           imageItem.appendChild(imgElement);
+            imageItem.style.height = '100px';
+            imageItem.style.width = '100px';
+            imageItem.style.objectFit = 'scale-down';
+            imageItem.style.alignItems = "center";
+
+
+            imgDiv.appendChild(imageItem);
+            imagesSection.appendChild(imgDiv);
         }
     },
     init: function() {

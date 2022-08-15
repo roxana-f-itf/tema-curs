@@ -1,14 +1,20 @@
-body {
+/* body {
     max-width: 960px;
+    margin: auto;
+} */
+
+.imageContent {
+    height: 300px;
+    width: 300px;
     margin: auto;
 }
 
-.imageContent {
+.si-image {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
-    width: 300px;
-
+    flex-direction: row;
+    object-fit: contain;
+    
 }
 
 .btn {
